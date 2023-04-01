@@ -1,8 +1,5 @@
-# Currency Converter in react
+# Getting Started with Create React App
 
-As part of my homework on the Frontend Developer course on the youcode platform, I created a currency converter. The user can check the Polish Zloty exchange rate against three currencies: Euro, Swiss Franc and British Pound.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
