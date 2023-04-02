@@ -57,11 +57,10 @@ export const Form = ({ calculateResult, result }) => {
             <p>
                 <button className="form__button">Convert</button>
             </p>
-
             <p className="form__info">
                 Source: www.oanda.pl of December 15, 2022.
             </p>
-            
+
             <Result result={result} />
         </form>
     );
