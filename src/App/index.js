@@ -22,11 +22,12 @@ function App() {
 
     return (
         <div className="app">
+            <Time />
             <Form
                 result={result}
                 calculateResult={calculateResult}
             />
-             <Time />
+             
         </div>
     );
 }

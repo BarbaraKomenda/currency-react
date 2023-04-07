@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 500px;
     margin: 10px auto;
-    color: white;
+    color: black;
 }
 
 .form__legend {
@@ -33,7 +33,7 @@
 }
 
 .form__field:required {
-    border-color: #8b0000;
+    border-color: #ff7f50;
 }
 
 .form__field:invalid {
@@ -48,9 +48,13 @@
     width: 30%;
     border: none;
     background-color: #ff7f50;
-    color: white;
+    color: black;
     padding: 10px;
     border-radius: 5px;
+    position: 0 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .form__button:hover {
@@ -67,7 +71,7 @@
     border: none;
     border-radius: 5px;
     background-color: #4b8198;
-    color: #ffffff;
+    color: black;
     margin: 10% 25%;
 }
 
@@ -76,4 +80,10 @@
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #4b8198;
+}
+
+.form__info {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
 }
