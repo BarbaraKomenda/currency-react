@@ -8,7 +8,8 @@ As part of my homework on the Frontend Developer course on the **youcode platfor
 
 
 
-https://user-images.githubusercontent.com/122162134/230635878-43e7f092-1c1e-4624-973a-12318d86c0df.mov
+https://user-images.githubusercontent.com/122162134/231167375-22665540-0235-4540-a902-ec654c1b2eeb.mov
+
 
 
 
