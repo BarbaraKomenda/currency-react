@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
+import { MainForm, Header, LabelText, Field, Button, Info } from "./styled.js";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].name);
@@ -13,16 +13,15 @@ export const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <h1 className="form__header">Currency Converter</h1>
+    <MainForm onSubmit={onSubmit}>
+      <Header>Currency Converter</Header>
       <p>
         <label>
-          <span className="form__labelText">Amount in PLN*:</span>
-          <input
+          <LabelText> Amount in PLN*:</LabelText>
+          <Field
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             placeholder="Enter the amount"
-            className="form__field"
             type="number"
             required
             step="0.01"
@@ -31,9 +30,9 @@ export const Form = ({ calculateResult, result }) => {
       </p>
       <p>
         <label>
-          <span className="form__labelText">Currency:</span>
-          <select
-            className="form__field"
+          <LabelText>Currency:</LabelText>
+          <Field
+            as="select"
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -42,14 +41,14 @@ export const Form = ({ calculateResult, result }) => {
                 {currency.name}
               </option>
             ))}
-          </select>
+          </Field>
         </label>
       </p>
       <p>
-        <button className="form__button">Convert</button>
+        <Button>Convert</Button>
       </p>
       <Result result={result} />
-      <p className="form__info">Source: www.oanda.pl of December 15, 2022.</p>
-    </form>
+      <Info>Source: www.oanda.pl of December 15, 2022.</Info>
+    </MainForm>
   );
 };

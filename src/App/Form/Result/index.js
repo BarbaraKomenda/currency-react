@@ -1,16 +1,15 @@
-import "./style.css";
+import { EndResult } from "./styled.js";
 
 export const Result = ({ result}) => (
-    <p className="result">
-        {result !== undefined && (
+    <EndResult>
+        {!!result && (
             < >
             {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=
             {" "}
-            
-            <strong>
+              <strong>
                 {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
                 </strong>
                 </>
         )}
-    </p>
+    </EndResult>
 );
